@@ -8,10 +8,6 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
-    <!-- Imagem obrigatória do posto de gasolina -->
-
-    <!-- Título do app -->
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
@@ -38,7 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Label do campo álcool -->
     <TextView
         android:id="@+id/labelAlcool"
         android:layout_width="wrap_content"
@@ -49,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="32dp"/>
 
-    <!-- Campo de entrada do álcool -->
     <EditText
         android:id="@+id/editTextAlcool"
         android:layout_width="0dp"
@@ -62,7 +56,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
-    <!-- Label do campo gasolina -->
     <TextView
         android:id="@+id/labelGasolina"
         android:layout_width="wrap_content"
@@ -73,7 +66,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Campo de entrada da gasolina -->
     <EditText
         android:id="@+id/editTextGasolina"
         android:layout_width="0dp"
@@ -86,7 +78,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
-    <!-- Botão CALCULAR -->
     <Button
         android:id="@+id/buttonCalcular"
         android:layout_width="0dp"
@@ -98,7 +89,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Botão LIMPAR -->
     <Button
         android:id="@+id/buttonLimpar"
         android:layout_width="0dp"
@@ -109,7 +99,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Texto de resultado -->
     <TextView
         android:id="@+id/textViewResultado"
         android:layout_width="0dp"
