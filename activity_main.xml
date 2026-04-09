@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Imagem obrigatória do posto de gasolina -->
+
+    <!-- Título do app -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="Posto de gasolina"
+        android:scaleType="fitCenter"
+        android:src="@drawable/_599859_homem_estacao_com_ilustracao_carro_musculo_vetor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/_599859_homem_estacao_com_ilustracao_carro_musculo_vetor" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Álcool ou Gasolina?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Label do campo álcool -->
+    <TextView
+        android:id="@+id/labelAlcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço do Álcool (R$):"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Campo de entrada do álcool -->
+    <EditText
+        android:id="@+id/editTextAlcool"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ex: 3,59"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelAlcool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Label do campo gasolina -->
+    <TextView
+        android:id="@+id/labelGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço da Gasolina (R$):"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextAlcool"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo de entrada da gasolina -->
+    <EditText
+        android:id="@+id/editTextGasolina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ex: 5,49"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelGasolina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Botão CALCULAR -->
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextGasolina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Botão LIMPAR -->
+    <Button
+        android:id="@+id/buttonLimpar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LIMPAR"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Texto de resultado -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/buttonLimpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
